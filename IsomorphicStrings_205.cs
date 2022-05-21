@@ -29,29 +29,34 @@ namespace leetcode
                 throw new Exception("Input length is less than 1");
 
             var IsPatternMatch = true;
-            var lookupTableS1 = new List<string>();
-            var lookupTableS2 = new List<string>();
+            var relation = new Dictionary<char, char>();
 
             for(var i=0; i<s1.Length; i++)
             {
-                string s1Char = s1[i].ToString();
-                if(lookupTableS1.IndexOf(s1Char) == -1)
-                {
-                    lookupTableS1.Add(s1Char);
-                }
+                char s1Char = s1[i];
+                char s2Char = s2[i];
+                char c;
 
-				string s2Char = s2[i].ToString();
-                if(lookupTableS2.IndexOf(s2Char) == -1)
+                if(relation.TryGetValue(s1Char, out c))
                 {
-                    lookupTableS2.Add(s2Char);
+                    if(c != s2Char)
+                    {
+                        IsPatternMatch = false;
+                        break;
+                    }
                 }
-
-                if(lookupTableS1.IndexOf(s1Char) != lookupTableS2.IndexOf(s2Char))
+                else if(relation.ContainsValue(s2Char))
                 {
                     IsPatternMatch = false;
                     break;
                 }
+                else
+                {
+                    relation.Add(s1Char, s2Char);
+                }
             }
+            // To mark for Garbage Collect
+            relation = null;
 
             return IsPatternMatch;
         }
