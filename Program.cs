@@ -9,7 +9,8 @@ namespace leetcode
             Console.Clear();
 
             // new WordPattern_290();
-            new IsomorphicStrings_205();
+            // new IsomorphicStrings_205();
+            new CountOddNumbersInAnInterval_1523();
         }
     }
 

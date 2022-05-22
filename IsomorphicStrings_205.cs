@@ -14,6 +14,7 @@ namespace leetcode
                 // Console.WriteLine("egg, muu: " + this.IsomorphicStrings("egg", "muu"));
                 Console.WriteLine("bbbaaaba, aaabbbba: " + this.IsomorphicStrings("bbbaaaba", "aaabbbba"));
                 // Console.WriteLine(this.IsomorphicStrings());
+
             }
             catch (Exception ex)
             {
