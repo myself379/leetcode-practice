@@ -10,7 +10,8 @@ namespace leetcode
 
             // new WordPattern_290();
             // new IsomorphicStrings_205();
-            new CountOddNumbersInAnInterval_1523();
+            // new CountOddNumbersInAnInterval_1523();
+            new AverageSalaryExcludeMinMax_1491();
         }
     }
 
