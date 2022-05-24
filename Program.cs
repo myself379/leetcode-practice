@@ -15,10 +15,12 @@ namespace leetcode
             // new AverageSalaryExcludeMinMax_1491();
             // new BinarySearch_704();
             // new ContainsDuplicate_217();
-            new StringInterpolation();
+
+            // new StringInterpolation(); // Replit test
 
             // Lessons
             // new HowIEnumerableWorks(); 
+            new HowYieldWorks();
         }
     }
 
