@@ -14,8 +14,11 @@ namespace leetcode
             // new CountOddNumbersInAnInterval_1523();
             // new AverageSalaryExcludeMinMax_1491();
             // new BinarySearch_704();
+            // new ContainsDuplicate_217();
+            new StringInterpolation();
 
-           new HowIEnumerableWorks(); 
+            // Lessons
+            // new HowIEnumerableWorks(); 
         }
     }
 
