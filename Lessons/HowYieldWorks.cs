@@ -23,6 +23,7 @@ namespace leetcode.Lessons
         }
     }
 
+    // Simulate database
     public class DataAccess
     {
         public static IEnumerable<PersonModel> GetPeople()
@@ -37,6 +38,7 @@ namespace leetcode.Lessons
         }
     }
 
+    // Simulate DTO model
     public class PersonModel
     {
         public string FirstName { get; set; }
